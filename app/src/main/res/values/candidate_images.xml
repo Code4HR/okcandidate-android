@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<resources>
+    <string-array name="candidate_names">
+        <item>Jessica Abbott</item>
+        <item>Dane U. Blythe</item>
+        <item>Bobby Dyer</item>
+        <item>George Furman III</item>,
+        <item>Amelia Ross-Hammond</item>
+        <item>Richard W. \"RK\" Kowalewitch</item>
+        <item>Courtney LaLonde</item>
+        <item>William D. Sessoms, Jr.</item>
+        <item>A.M. \"Don\" Weeks</item>
+        <item>Rosemary Wilson</item>
+        <item>Pam Witham</item>
+        <item>Robert K. Dean</item>
+        <item>Shannon Kane</item>
+    </string-array>
+
+    <string-array name="candidate_images">
+        <item>abbott.jpg</item>
+        <item>blythe.jpg</item>
+        <item>dyer.jpg</item>
+        <item>furman.jpg</item>
+        <item>hammond.jpg</item>
+        <item>kowalewitch.jpg</item>
+        <item>lalonde.jpg</item>
+        <item>sessoms.jpg</item>
+        <item>weeks.jpg</item>
+        <item>wilson.jpg</item>
+        <item>witham.jpg</item>
+        <item>dean.jpg</item>
+        <item>kane.jpg</item>
+    </string-array>
+</resources>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<resources>
+    <string-array name="neighborhoods">
+        <item>Abingdon Village</item>
+        <item>Aeries on the Bay</item>
+        <item>Alanton</item>
+        <item>Alexandria</item>
+        <item>Amhurst</item>
+        <item>Aragona Village</item>
+        <item>Avalon Hills</item>
+        <item>Avalon Terrace</item>
+        <item>Back Bay</item>
+        <item>Bancroft Hall</item>
+        <item>Baylake Pines</item>
+        <item>Bayside</item>
+        <item>Bellamy Manor Estates</item>
+        <item>Bellamy Plantation</item>
+        <item>Bellwood Estates</item>
+        <item>Belmeade</item>
+        <item>Bentley Gate</item>
+        <item>Bentley Park</item>
+        <item>Birchwood</item>
+        <item>Birdneck Lake</item>
+        <item>Birdneck Point</item>
+        <item>Birdneck Villas</item>
+        <item>Birnum Woods</item>
+        <item>Bishopsgate</item>
+        <item>Blackstone Lynn Meadows</item>
+        <item>Blackwater</item>
+        <item>Blossom Hill Estates</item>
+        <item>Bluegrass Park at Lexington</item>
+        <item>Brandon</item>
+        <item>Brenneman Farm Condominium</item>
+        <item>Brigadoon</item>
+        <item>Brighton on the Bay</item>
+        <item>Broad Bay Estates</item>
+        <item>Broad Bay Island</item>
+        <item>Broad Bay Point Greens</item>
+        <item>Brookside Condos</item>
+        <item>Brookwood</item>
+        <item>Buckner Farm</item>
+        <item>Buckner Woods</item>
+        <item>Burtons</item>
+        <item>Buyrn Farms</item>
+        <item>Campus East Wesleyan Pines</item>
+        <item>Cape Henry Shores</item>
+        <item>Cape Story by the Sea</item>
+        <item>Cardinal Estates</item>
+        <item>Carolanne Farms</item>
+        <item>Carol Anne Farms South</item>
+        <item>Carriage Hill</item>
+        <item>Carriage Mill</item>
+        <item>Castlefield</item>
+        <item>Castleton at London Bridge</item>
+        <item>Cavalier Park / Bay Colony</item>
+        <item>Cedar Hills</item>
+        <item>Chancellor Walk</item>
+        <item>Chapel Lake Apartments</item>
+        <item>Charlestowne</item>
+        <item>Chatmoss</item>
+        <item>Cheltenham Square</item>
+        <item>Chesapeake Beach</item>
+        <item>Chesopeian Colony</item>
+        <item>Cheyenne Village</item>
+        <item>Chimney Hill</item>
+        <item>Christopher Farms</item>
+        <item>Church Point</item>
+        <item>Cobblestone Trace</item>
+        <item>College Park</item>
+        <item>College Square</item>
+        <item>Columbus Station</item>
+        <item>Cornerstone</item>
+        <item>County View</item>
+        <item>Courthouse Estates</item>
+        <item>Courthouse Forrest</item>
+        <item>Courthouse Woods Condos</item>
+        <item>Coventry</item>
+        <item>Crawford</item>
+        <item>creeds</item>
+        <item>Croatan</item>
+        <item>Cromwell Park</item>
+        <item>Crystal Point North</item>
+        <item>Cypress Point</item>
+        <item>Dam Neck</item>
+        <item>Diamond Lake Estates</item>
+        <item>Diamond Springs/ Gardenwood Park</item>
+        <item>Dorchester Village</item>
+        <item>Eagles Nest</item>
+        <item>Eastwind</item>
+        <item>Elizabeth River Shores</item>
+        <item>Elizabeth River Terrace</item>
+        <item>Fairfield</item>
+        <item>Fair Meadows</item>
+        <item>Farrcroft</item>
+        <item>First Colonial / Oceana</item>
+        <item>Foxfire</item>
+        <item>Fox Run</item>
+        <item>Framingham Village</item>
+        <item>Gables at Bellamy</item>
+        <item>Garnetts Watch</item>
+        <item>Gatewood Ave</item>
+        <item>Glenwood-CFC</item>
+        <item>Glenwood-Wyndamere</item>
+        <item>Glyndon Village</item>
+        <item>Grand Bay</item>
+        <item>Grassland Farms</item>
+        <item>Great Lakes Dr</item>
+        <item>Great Neck Estates</item>
+        <item>Great Neck Farms</item>
+        <item>Great Neck Meadows</item>
+        <item>Great Neck Point</item>
+        <item>Great Neck Villas</item>
+        <item>Green Acres</item>
+        <item>Green Hill/Chelsea</item>
+        <item>Green Run</item>
+        <item>Greenwich Rd</item>
+        <item>Greenwood</item>
+        <item>Groveland Park</item>
+        <item>Harpers Rd/Corp Landing</item>
+        <item>Haven Estates</item>
+        <item>Haven Heights</item>
+        <item>Haygood Halls</item>
+        <item>Heritage Park</item>
+        <item>Hermitage Townhomes</item>
+        <item>Heron Ridge Estates</item>
+        <item>Heron\'s Cove</item>
+        <item>Hidden Oaks</item>
+        <item>Highgate Greens</item>
+        <item>Highland Parish</item>
+        <item>Hillcrest Farms</item>
+        <item>Hilltop</item>
+        <item>Holland Oaks/Holland Pine</item>
+        <item>Holland Woods</item>
+        <item>Homestead</item>
+        <item>Hunt Club Community</item>
+        <item>Independence Square</item>
+        <item>Indian Lakes</item>
+        <item>Indian River</item>
+        <item>Inlynnview</item>
+        <item>Jamestown</item>
+        <item>Jonathan\'s Cove</item>
+        <item>Kempshire Manor</item>
+        <item>Kemps Lake</item>
+        <item>Kempsville</item>
+        <item>King\'s Forrest</item>
+        <item>King\'s Grant</item>
+        <item>Kline Drive</item>
+        <item>Knob Hill</item>
+        <item>Koa Camp</item>
+        <item>Lago Mar</item>
+        <item>Lake Christopher</item>
+        <item>Lake Edward</item>
+        <item>Lake Holly</item>
+        <item>Lake James</item>
+        <item>Lake Placid</item>
+        <item>Lakes End Condo Association</item>
+        <item>Lake Shores</item>
+        <item>Lakeside</item>
+        <item>Lake Smith Ter/Haygood Pt/Gov Sq</item>
+        <item>Lakeview Park</item>
+        <item>Lakeview Shores</item>
+        <item>Lakeville Estate-Riverton</item>
+        <item>Lakewood</item>
+        <item>Lands End</item>
+        <item>Landstown</item>
+        <item>Lark Downs</item>
+        <item>Larkspur</item>
+        <item>Laskin Rd / Barberton Dr</item>
+        <item>Latitudes Apts</item>
+        <item>Laurel Cove</item>
+        <item>Laurel Manor</item>
+        <item>Lawson Forest</item>
+        <item>Level Green</item>
+        <item>Linkhorn Cove</item>
+        <item>Linkhorn Oaks</item>
+        <item>Linlier</item>
+        <item>Litchfield Manor</item>
+        <item>Little Haven</item>
+        <item>Little Neck Cove</item>
+        <item>Little Neck Village</item>
+        <item>L &amp; J Gardens</item>
+        <item>Lord Dunmore</item>
+        <item>Lynbrooklanding</item>
+        <item>Lynnhaven</item>
+        <item>Lynnwood</item>
+        <item>Magic Hollow</item>
+        <item>Malibu</item>
+        <item>Maplebay</item>
+        <item>Matthews Village</item>
+        <item>Mayflower</item>
+        <item>McDonald Park</item>
+        <item>Middle Plantation</item>
+        <item>Midway Manor</item>
+        <item>New Light</item>
+        <item>Newpointe</item>
+        <item>Newtown Road</item>
+        <item>North Old Donation Pkwy.</item>
+        <item>Northridge</item>
+        <item>North Shore at Ridgely Manor</item>
+        <item>North Virginia Beach</item>
+        <item>Nottingham</item>
+        <item>Oak Springs</item>
+        <item>Oceana Gardens West</item>
+        <item>Oceanfront</item>
+        <item>Ocean Hills</item>
+        <item>Ocean Lakes</item>
+        <item>Ocean Park</item>
+        <item>Oceans</item>
+        <item>Old Beach</item>
+        <item>Old Great Neck Rd</item>
+        <item>Owl\'s Creek</item>
+        <item>Park Place</item>
+        <item>Parkside Green in VB</item>
+        <item>Pecan Gardens</item>
+        <item>Pembroke Manor</item>
+        <item>Pembroke Meadows</item>
+        <item>Pine Meadows</item>
+        <item>Pine Ridge Community</item>
+        <item>Pinewood Gardens</item>
+        <item>Pinewood Park</item>
+        <item>Plaza Apartments</item>
+        <item>Pleasure House Road</item>
+        <item>Pocahontas Village</item>
+        <item>Point Hollow</item>
+        <item>Point O\' Woods</item>
+        <item>Potters Road</item>
+        <item>Prince George /Mayberry</item>
+        <item>Princess Anne</item>
+        <item>Pungo</item>
+        <item>Redwing</item>
+        <item>Redwood Farms</item>
+        <item>Reon Estates</item>
+        <item>Ridgewood Apartments</item>
+        <item>Ridgley Manor</item>
+        <item>River Lake</item>
+        <item>River Oaks</item>
+        <item>Rock Creek</item>
+        <item>Rollingwood</item>
+        <item>RoseCrest</item>
+        <item>Rose Hall Apartments</item>
+        <item>Rosemont Forest</item>
+        <item>Rudee Heights</item>
+        <item>Sajo Farm</item>
+        <item>Salem Lakes</item>
+        <item>Salem Rd/N Landing Rd</item>
+        <item>Salem Road II</item>
+        <item>Salem Sunstream Park</item>
+        <item>Salem Woods</item>
+        <item>Salt Marsh Point</item>
+        <item>Saltmeadow Bay</item>
+        <item>Sandbridge</item>
+        <item>Scarborough Square</item>
+        <item>Sea Breeze Farm</item>
+        <item>Seagate Colony</item>
+        <item>Shadowlawn</item>
+        <item>Shannon Knoll</item>
+        <item>Shelton Circle</item>
+        <item>Sherry Park</item>
+        <item>Sherwood Lakes</item>
+        <item>Southall Quarter</item>
+        <item>Southern Woods/Redmill Farms</item>
+        <item>Southgate</item>
+        <item>South Shore Estates</item>
+        <item>Staples Mill Chase</item>
+        <item>Stratford Chase</item>
+        <item>Summerhouse</item>
+        <item>Sussex</item>
+        <item>Thalia</item>
+        <item>The Crescent</item>
+        <item>The Lakes</item>
+        <item>The New Oaks</item>
+        <item>The Reserve at Great Neck</item>
+        <item>Thoroughgood</item>
+        <item>Three Oaks Homes</item>
+        <item>Timberlake</item>
+        <item>Towne Square</item>
+        <item>Ultris at Banyan Grove</item>
+        <item>Upton</item>
+        <item>Victoria Park</item>
+        <item>Village Bend</item>
+        <item>Villas at Bellamy</item>
+        <item>Washington Square</item>
+        <item>Waterfront</item>
+        <item>Wellington Woods</item>
+        <item>Wesleyan Chase</item>
+        <item>West Neck</item>
+        <item>Westview</item>
+        <item>Weybridge Park</item>
+        <item>Willow Creek Point</item>
+        <item>Willowpond</item>
+        <item>Windsor Gate</item>
+        <item>Wishart Cove</item>
+        <item>Witchduck</item>
+        <item>Wolfsnare Plantation</item>
+        <item>Woodbridge</item>
+        <item>Woodland Estates</item>
+        <item>Woodland Park Condo</item>
+        <item>Woodscape</item>
+        <item>Woodstock</item>
+    </string-array>
+</resources>
