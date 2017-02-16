@@ -1,0 +1,46 @@
+<!--Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<resources>
+    <string name="app_name">okCandidate</string>
+    <string name="app_dev">Code for Hampton Roads and The Virginian Pilot</string>
+    <string name="app_domain">http://okcandidate.code4hr.org</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="api_url">http://okcandidate.code4hr.org/api</string>
+    <string name="survey_url">/survey</string>
+    <string name="survey_response_url">/survey_response</string>
+    <string name="survey_answer_url">/survey_answer</string>
+    <string name="candidate_match_url">/candidate_match</string>
+    <string name="heart_bar_text"><b>How strongly do you feel about this?</b></string>
+    <string name="prev_button">Back</string>
+    <string name="skip_button">Skip</string>
+    <string name="next_button">Next</string>
+    <string name="submit_button">Submit &amp; View Results</string>
+    <string name="candidate_image_path">http://okcandidate.code4hr.org/img/candidates/virginiabeach/</string>
+    <string name="no_survey_error">No survey exists!</string>
+    <string name="neighborhood_instructions">Select your neigborhood:</string>
+    <string name="elections_instructions">Select an election:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,106 @@
+<!--Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.code4hr.okcandidate.SurveyFragment"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/survey_question"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:id="@+id/survey_answers_radio_group">
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heart_bar_text"
+            android:id="@+id/textView2" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:progressDrawable="@drawable/heart_ratingbar_selector"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="3.0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prev_button"
+                android:id="@+id/prev_button"
+                android:background="@drawable/prev_button_background" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skip_button"
+                android:id="@+id/skip_button"
+                android:layout_gravity="right"
+                android:background="@drawable/skip_button_background"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_button"
+                android:id="@+id/next_button"
+                android:layout_gravity="right"
+                android:background="@drawable/next_button_background"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:id="@+id/submit_button"
+            android:layout_gravity="center"
+            android:background="@drawable/next_button_background"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
