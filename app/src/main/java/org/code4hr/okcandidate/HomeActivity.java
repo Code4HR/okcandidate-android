@@ -108,8 +108,10 @@ public class HomeActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_survey: {
+
                 FragmentTransaction tx = getFragmentManager().beginTransaction();
                 tx.replace(R.id.content_frame, new NeighborhoodsFragment());
+                tx.addToBackStack(null);
                 tx.commit();
                 break;
             }
@@ -119,6 +121,7 @@ public class HomeActivity extends AppCompatActivity
                 if (survey_id != 0) {
                     FragmentTransaction tx = getFragmentManager().beginTransaction();
                     tx.replace(R.id.content_frame, CandidateFragment.newInstance(survey_id));
+                    tx.addToBackStack(null);
                     tx.commit();
                 } else {
                     Toast.makeText(this, R.string.no_survey_error, Toast.LENGTH_SHORT).show();

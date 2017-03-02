@@ -36,7 +36,12 @@ public class PostAndDownloadJSON extends DownloadJSON {
     @Override
     protected JSONTokener doInBackground(String... urls) {
         JSONParser parser = new JSONParser();
-        JSONTokener jsonData = parser.postJSONFromUrl(urls[0], mJSON);
-        return jsonData;
+        try {
+            JSONTokener jsonData = parser.postJSONFromUrl(urls[0], mJSON);
+            return jsonData;
+        } catch (Exception e) {
+            mException = e;
+            return null;
+        }
     }
 }

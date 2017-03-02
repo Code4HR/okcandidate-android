@@ -109,6 +109,7 @@ public class NeighborhoodsFragment extends Fragment implements CandidateFragment
     private void openElection(String neighborhoodName) {
         FragmentTransaction tx =  getFragmentManager().beginTransaction();
         tx.replace(R.id.content_frame, ElectionsFragment.newInstance(neighborhoodName));
+        tx.addToBackStack(null);
         tx.commit();
     }
 

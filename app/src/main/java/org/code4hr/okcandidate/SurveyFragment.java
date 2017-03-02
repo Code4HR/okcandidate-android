@@ -17,8 +17,10 @@ under the License.*/
 
 package org.code4hr.okcandidate;
 
+import android.app.AlertDialog;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
@@ -326,7 +328,22 @@ public class SurveyFragment extends Fragment implements View.OnClickListener {
 
 
     private class DownloadSurvey implements DownloadJSON.PostExecuteCallback {
-        public void Callback(JSONTokener result, Fragment surveyFragment) {
+        public void Callback(JSONTokener result, Fragment surveyFragment, Exception exception) {
+            if(exception != null) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle(getString(R.string.error_title))
+                        .setMessage(getString(R.string.error_message_connection))
+                        .setPositiveButton(getString(R.string.ok_text), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                getActivity().onBackPressed();
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+                return;
+            }
+
             try {
                 SurveyFragment lSurveyFragment = (SurveyFragment) surveyFragment;
                 JSONObject election = (JSONObject) result.nextValue();
@@ -348,7 +365,22 @@ public class SurveyFragment extends Fragment implements View.OnClickListener {
 
     private class DownloadSubmittedSurveyResponse implements DownloadJSON.PostExecuteCallback {
         @Override
-        public void Callback(JSONTokener result, Fragment fragment) {
+        public void Callback(JSONTokener result, Fragment fragment, Exception exception) {
+            if(exception != null) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle(getString(R.string.error_title))
+                        .setMessage(getString(R.string.error_message_connection))
+                        .setPositiveButton(getString(R.string.ok_text), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                getActivity().onBackPressed();
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+                return;
+            }
+
             try {
                 JSONObject response = (JSONObject) result.nextValue();
                 int response_id = response.getInt("id");
@@ -364,7 +396,22 @@ public class SurveyFragment extends Fragment implements View.OnClickListener {
 
     private class DownloadSubmittedAnswerResponse implements DownloadJSON.PostExecuteCallback {
         @Override
-        public void Callback(JSONTokener result, Fragment fragment) {
+        public void Callback(JSONTokener result, Fragment fragment, Exception exception) {
+            if(exception != null) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle(getString(R.string.error_title))
+                        .setMessage(getString(R.string.error_message_connection))
+                        .setPositiveButton(getString(R.string.ok_text), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                getActivity().onBackPressed();
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+                return;
+            }
+
             try {
                 int survey_id = 0;
                 JSONArray responses = (JSONArray) result.nextValue();
@@ -382,6 +429,7 @@ public class SurveyFragment extends Fragment implements View.OnClickListener {
 
                 FragmentTransaction tx = getFragmentManager().beginTransaction();
                 tx.replace(R.id.content_frame, CandidateFragment.newInstance(survey_id));
+                tx.addToBackStack(null);
                 tx.commit();
             }
             catch (JSONException e) {

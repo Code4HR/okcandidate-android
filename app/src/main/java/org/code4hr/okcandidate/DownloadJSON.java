@@ -30,30 +30,41 @@ import org.json.JSONTokener;
 //downloads election list in new thread and populates an ArrayAdapter
 public class DownloadJSON extends AsyncTask<String, Void, JSONTokener> {
 
+
+
     public interface PostExecuteCallback {
-        public void Callback(JSONTokener result, Fragment fragment);
+        public void Callback(JSONTokener result, Fragment fragment, Exception e);
     }
 
     private Fragment mFragment;
     private PostExecuteCallback mPostExecuteCallback;
+    protected Exception mException;
 
     public DownloadJSON(Fragment fragment, PostExecuteCallback postExecutCallback) {
         mFragment = fragment;
         mPostExecuteCallback = postExecutCallback;
+        mException = null;
     }
 
     @Override
     protected JSONTokener doInBackground(String... urls) {
 
         JSONParser parser = new JSONParser();
-        JSONTokener jsonData = parser.getJSONFromUrl(urls[0]);
-        return jsonData;
+        try {
+            JSONTokener jsonData = parser.getJSONFromUrl(urls[0]);
+            return jsonData;
+        }
+        catch(Exception e) {
+            mException = e;
+        }
+
+        return null;
     }
 
     // onPostExecute displays the results of the AsyncTask.
     @Override
     protected void onPostExecute(JSONTokener result) {
-        mPostExecuteCallback.Callback(result,mFragment);
+        mPostExecuteCallback.Callback(result,mFragment, mException);
     }
 }
 
