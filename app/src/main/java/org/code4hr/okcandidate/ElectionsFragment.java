@@ -17,8 +17,10 @@ under the License.*/
 
 package org.code4hr.okcandidate;
 
+import android.app.AlertDialog;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -116,12 +118,28 @@ public class ElectionsFragment extends Fragment implements OnElectionClickListen
     public void openSurvey(int id) {
         FragmentTransaction tx =  getFragmentManager().beginTransaction();
         tx.replace(R.id.content_frame, SurveyFragment.newInstance(id, mNeighborhoodName));
+        tx.addToBackStack(null);
         tx.commit();
     }
 
     private class DownloadElections implements DownloadJSON.PostExecuteCallback {
         @Override
-        public void Callback(JSONTokener result, Fragment fragment) {
+        public void Callback(JSONTokener result, Fragment fragment, Exception exception) {
+            if(exception != null) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle(getString(R.string.error_title))
+                        .setMessage(getString(R.string.error_message_connection))
+                        .setPositiveButton(getString(R.string.ok_text), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                getActivity().onBackPressed();
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+                return;
+            }
+
             try {
                 JSONArray elections = (JSONArray) result.nextValue();
                 for(int i = 0; i < elections.length(); i++) {

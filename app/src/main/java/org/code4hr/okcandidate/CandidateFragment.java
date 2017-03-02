@@ -17,8 +17,10 @@ under the License.*/
 
 package org.code4hr.okcandidate;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.net.Uri;
@@ -151,7 +153,22 @@ public class CandidateFragment extends Fragment {
 
     private class DownloadCandidateMatches implements DownloadJSON.PostExecuteCallback {
         @Override
-        public void Callback(JSONTokener result, android.app.Fragment fragment) {
+        public void Callback(JSONTokener result, android.app.Fragment fragment, Exception exception) {
+
+            if(exception != null) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setTitle(getString(R.string.error_title))
+                        .setMessage(getString(R.string.error_message_connection))
+                        .setPositiveButton(getString(R.string.ok_text), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                getActivity().onBackPressed();
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+                return;
+            }
 
             String[] candidateNames = getResources().getStringArray(R.array.candidate_names);
             String[] candidateImages = getResources().getStringArray(R.array.candidate_images);
