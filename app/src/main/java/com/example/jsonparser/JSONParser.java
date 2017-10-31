@@ -30,7 +30,7 @@ public class JSONParser {
  
     }
  
-    public JSONTokener getJSONFromUrl(String url) {
+    public JSONTokener getJSONFromUrl(String url) throws Exception {
 
         URL urlObj;
         urlObj = createURLObj(url);
@@ -42,7 +42,7 @@ public class JSONParser {
         }
         catch (java.io.IOException e) {
             Log.e("JSONPARSER", "Error parsing data " + e.toString());
-            return null;
+            throw e;
         }
 
         jsonTokener = GetJSON(urlConnection);
@@ -54,7 +54,7 @@ public class JSONParser {
         return jsonTokener;
     }
 
-    private URL createURLObj(String url) {
+    private URL createURLObj(String url) throws Exception {
         URL urlObj;
 
         // Making HTTP request
@@ -63,13 +63,13 @@ public class JSONParser {
         }
         catch (java.net.MalformedURLException e) {
             Log.e("JSONPARSER", "Error parsing data " + e.toString());
-            return null;
+            throw e;
         }
 
         return urlObj;
     }
 
-    public JSONTokener postJSONFromUrl(String url, String json) {
+    public JSONTokener postJSONFromUrl(String url, String json) throws Exception {
 
         URL urlObj;
         urlObj = createURLObj(url);
@@ -94,7 +94,7 @@ public class JSONParser {
         }
         catch (java.io.IOException e) {
             Log.e("JSONPARSER", "Error parsing data " + e.toString());
-            return null;
+            throw e;
         }
 
 
@@ -108,7 +108,7 @@ public class JSONParser {
         return jsonTokener;
     }
 
-    private JSONTokener GetJSON(HttpURLConnection urlConnection) {
+    private JSONTokener GetJSON(HttpURLConnection urlConnection) throws Exception {
 
         int bufferSize = 1024;
 
@@ -120,11 +120,11 @@ public class JSONParser {
             }
             catch (java.io.IOException e) {
                 Log.e("JSONPARSER", "Error parsing data " + e.toString());
-                return null;
+                throw e;
             }
             catch (Exception e) {
                 Log.e("JSONPARSER", "Error parsing data " + e.toString());
-                return null;
+                throw e;
             }
 
             StringBuilder sb = new StringBuilder();
@@ -141,14 +141,14 @@ public class JSONParser {
                 jsonTokener = new JSONTokener(json);
             } catch (Exception e) {
                 Log.e("JSONPARSER", "Error parsing data " + e.toString());
-                return null;
+                throw e;
             }
 
 
         }
         catch (Exception e) {
             Log.e("JSONPARSER", "Error parsing data " + e.toString());
-            return null;
+            throw e;
         }
 
         return jsonTokener;
